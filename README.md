@@ -17,7 +17,7 @@ MedNLI - natural languge inference in clinical texts
 
 1. Download SNLI: https://nlp.stanford.edu/projects/snli/
 2. Download MultiNLI: http://www.nyu.edu/projects/bowman/multinli/ (we experimented with MultiNLI v0.9)
-3. Download MedNLI: http://placeholder.com
+3. Download MedNLI: https://jgc128.github.io/mednli/
 
 Put all of the data inside the `./data/` dir so is has the following structure:
 ```
