@@ -11,5 +11,5 @@ We introduce MedNLI - a dataset annotated by doctors, performing a natural langu
 ### Access the data
 We make MedNLI available through the MIMIC-III derived data repository. Any individual certified to access MIMIC-III can access MedNLI.
 
-http://doi.org/10.13026/C2RS98
+[http://doi.org/10.13026/C2RS98](http://doi.org/10.13026/C2RS98)
 
