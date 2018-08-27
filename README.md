@@ -122,6 +122,6 @@ To run the model with a specific embeddings, use the `word_vectors_type` paramet
    
    
 ### Knowledge-directed attention
-Set both `use_umls_attention` and `use_umls_attention` to `True` to reproduce the token-level UMLS attention experiments:
+Set both `use_umls_attention` and `use_token_level_attention` to `True` to reproduce the token-level UMLS attention experiments:
 
-`python train_model.py with use_umls_attention=True use_umls_attention=True`
+`python train_model.py with use_umls_attention=True use_token_level_attention=True`
