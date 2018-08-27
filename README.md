@@ -1,5 +1,5 @@
-MedNLI - natural languge inference in clinical texts
-====================================================
+MedNLI - Natural Language Inference in Clinical Texts
+=====================================================
 
 ## Installation
 
@@ -145,3 +145,25 @@ To run the model with a specific embeddings, use the `word_vectors_type` paramet
 Set both `use_umls_attention` and `use_token_level_attention` to `True` to reproduce the token-level UMLS attention experiments:
 
 `python train_model.py with use_umls_attention=True use_token_level_attention=True`
+
+
+# Reference
+The paper was accepted to EMNLP 2018! Meanwhile, here is an extended arXiv version:
+
+Romanov, A., & Shivade, C. (2018). Lessons from Natural Language Inference in the Clinical Domain. arXiv preprint arXiv:1808.06752.
+https://arxiv.org/abs/1808.06752
+
+
+```
+@article{romanov2018lessons,
+	title = {Lessons from Natural Language Inference in the Clinical Domain},
+	url = {http://arxiv.org/abs/1808.06752},
+	abstract = {State of the art models using deep neural networks have become very good in learning an accurate mapping from inputs to outputs. However, they still lack generalization capabilities in conditions that differ from the ones encountered during training. This is even more challenging in specialized, and knowledge intensive domains, where training data is limited. To address this gap, we introduce {MedNLI} - a dataset annotated by doctors, performing a natural language inference task ({NLI}), grounded in the medical history of patients. We present strategies to: 1) leverage transfer learning using datasets from the open domain, (e.g. {SNLI}) and 2) incorporate domain knowledge from external data and lexical sources (e.g. medical terminologies). Our results demonstrate performance gains using both strategies.},
+	journaltitle = {{arXiv}:1808.06752 [cs]},
+	author = {Romanov, Alexey and Shivade, Chaitanya},
+	urldate = {2018-08-27},
+	date = {2018-08-21},
+	eprinttype = {arxiv},
+	eprint = {1808.06752},
+}
+```
