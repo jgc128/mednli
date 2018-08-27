@@ -27,7 +27,7 @@ https://arxiv.org/abs/1808.06752
 	title = {Lessons from Natural Language Inference in the Clinical Domain},
 	url = {http://arxiv.org/abs/1808.06752},
 	abstract = {State of the art models using deep neural networks have become very good in learning an accurate mapping from inputs to outputs. However, they still lack generalization capabilities in conditions that differ from the ones encountered during training. This is even more challenging in specialized, and knowledge intensive domains, where training data is limited. To address this gap, we introduce {MedNLI} - a dataset annotated by doctors, performing a natural language inference task ({NLI}), grounded in the medical history of patients. We present strategies to: 1) leverage transfer learning using datasets from the open domain, (e.g. {SNLI}) and 2) incorporate domain knowledge from external data and lexical sources (e.g. medical terminologies). Our results demonstrate performance gains using both strategies.},
-	journaltitle = {\{arXiv\}:1808.06752 [cs]},
+	journaltitle = {arXiv:1808.06752 [cs]},
 	author = {Romanov, Alexey and Shivade, Chaitanya},
 	urldate = {2018-08-27},
 	date = {2018-08-21},
