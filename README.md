@@ -30,6 +30,26 @@ $ ls data/snli_1.0/
 README.txt  snli_1.0_dev.jsonl  snli_1.0_dev.txt  snli_1.0_test.jsonl  snli_1.0_test.txt  snli_1.0_train.jsonl  snli_1.0_train.txt
 ```
 
+## Downloading the word embeddings
+
+| Word Embedding  | Link |
+| ------------- | ------------- |
+|glove |  [glove.840B.300d.pickled](https://umlsharedfiles.blob.core.windows.net/mednli/word_embeddings/glove.840B.300d.pickled) |
+|mimic |  [mimic.fastText.no_clean.300d.pickled](https://umlsharedfiles.blob.core.windows.net/mednli/word_embeddings/mimic.fastText.no_clean.300d.pickled) |
+|bio_asq | [bio_asq.no_clean.300d.pickled](https://umlsharedfiles.blob.core.windows.net/mednli/word_embeddings/bio_asq.no_clean.300d.pickled) |
+|wiki_en | [wiki_en.fastText.300d.pickled](https://umlsharedfiles.blob.core.windows.net/mednli/word_embeddings/wiki_en.fastText.300d.pickled) |
+|wiki_en_mimic |  [wiki_en_mimic.fastText.no_clean.300d.pickled](https://umlsharedfiles.blob.core.windows.net/mednli/word_embeddings/wiki_en_mimic.fastText.no_clean.300d.pickled) |
+|glove_bio_asq |  [glove_bio_asq.no_clean.300d.pickled](https://umlsharedfiles.blob.core.windows.net/mednli/word_embeddings/glove_bio_asq.no_clean.300d.pickled) |
+|glove_bio_asq_mimic |[glove_bio_asq_mimic.no_clean.300d.pickled](https://umlsharedfiles.blob.core.windows.net/mednli/word_embeddings/glove_bio_asq_mimic.no_clean.300d.pickled) |
+
+Put all embeddings inside the `./data/word_embeddings/` dir so is has the following structure:
+
+```
+$ ls data/word_embeddings/
+glove.840B.300d.pickled		glove_bio_asq_mimic.no_clean.300d.pickled 	mimic.fastText.no_clean.300d.pickled
+```
+
+
 ## Running the code
 Code tested on Python 3.4 and Python 3.6.3
 
