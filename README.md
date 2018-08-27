@@ -150,7 +150,7 @@ Set both `use_umls_attention` and `use_token_level_attention` to `True` to repro
 # Reference
 The paper was accepted to EMNLP 2018! Meanwhile, here is an extended arXiv version:
 
-Romanov, A., & Shivade, C. (2018). Lessons from Natural Language Inference in the Clinical Domain. arXiv preprint arXiv:1808.06752.
+Romanov, A., & Shivade, C. (2018). Lessons from Natural Language Inference in the Clinical Domain. arXiv preprint arXiv:1808.06752.  
 https://arxiv.org/abs/1808.06752
 
 
