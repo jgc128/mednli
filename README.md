@@ -34,13 +34,13 @@ README.txt  snli_1.0_dev.jsonl  snli_1.0_dev.txt  snli_1.0_test.jsonl  snli_1.0_
 
 | Word Embedding  | Link |
 | ------------- | ------------- |
-|glove |  [glove.840B.300d.pickled](https://umlsharedfiles.blob.core.windows.net/mednli/word_embeddings/glove.840B.300d.pickled) |
-|mimic |  [mimic.fastText.no_clean.300d.pickled](https://umlsharedfiles.blob.core.windows.net/mednli/word_embeddings/mimic.fastText.no_clean.300d.pickled) |
-|bio_asq | [bio_asq.no_clean.300d.pickled](https://umlsharedfiles.blob.core.windows.net/mednli/word_embeddings/bio_asq.no_clean.300d.pickled) |
-|wiki_en | [wiki_en.fastText.300d.pickled](https://umlsharedfiles.blob.core.windows.net/mednli/word_embeddings/wiki_en.fastText.300d.pickled) |
-|wiki_en_mimic |  [wiki_en_mimic.fastText.no_clean.300d.pickled](https://umlsharedfiles.blob.core.windows.net/mednli/word_embeddings/wiki_en_mimic.fastText.no_clean.300d.pickled) |
-|glove_bio_asq |  [glove_bio_asq.no_clean.300d.pickled](https://umlsharedfiles.blob.core.windows.net/mednli/word_embeddings/glove_bio_asq.no_clean.300d.pickled) |
-|glove_bio_asq_mimic |[glove_bio_asq_mimic.no_clean.300d.pickled](https://umlsharedfiles.blob.core.windows.net/mednli/word_embeddings/glove_bio_asq_mimic.no_clean.300d.pickled) |
+|glove |  [glove.840B.300d.pickled](https://mednli.blob.core.windows.net/shared/word_embeddings/glove.840B.300d.pickled) |
+|mimic |  [mimic.fastText.no_clean.300d.pickled](https://mednli.blob.core.windows.net/shared/word_embeddings/mimic.fastText.no_clean.300d.pickled) |
+|bio_asq | [bio_asq.no_clean.300d.pickled](https://mednli.blob.core.windows.net/shared/word_embeddings/bio_asq.no_clean.300d.pickled) |
+|wiki_en | [wiki_en.fastText.300d.pickled](https://mednli.blob.core.windows.net/shared/word_embeddings/wiki_en.fastText.300d.pickled) |
+|wiki_en_mimic |  [wiki_en_mimic.fastText.no_clean.300d.pickled](https://mednli.blob.core.windows.net/shared/word_embeddings/wiki_en_mimic.fastText.no_clean.300d.pickled) |
+|glove_bio_asq |  [glove_bio_asq.no_clean.300d.pickled](https://mednli.blob.core.windows.net/shared/word_embeddings/glove_bio_asq.no_clean.300d.pickled) |
+|glove_bio_asq_mimic |[glove_bio_asq_mimic.no_clean.300d.pickled](https://mednli.blob.core.windows.net/shared/word_embeddings/glove_bio_asq_mimic.no_clean.300d.pickled) |
 
 Put all embeddings inside the `./data/word_embeddings/` dir so is has the following structure:
 
