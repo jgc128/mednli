@@ -26,22 +26,28 @@ ex = Experiment('train_model')
 
 def load_data(limit=None, load_test=False):
     """Load SNLI, MultiNLI and MLI datasets into train/dev DataFrames"""
-    data_snli_train = read_nli_data(SNLI_TRAIN_FILENAME, set_genre='snli', limit=limit)
-    data_snli_dev = read_nli_data(SNLI_DEV_FILENAME, set_genre='snli', limit=limit)
-    logging.info('SNLI: train - %s, dev - %s', data_snli_train.shape, data_snli_dev.shape)
+    data_snli_dev, data_snli_train = None, None
+    data_multinli_train, data_multinli_dev = None, None
+    data_mli_train, data_mli_dev = None, None
+    data_mli_test = None
 
-    data_multinli_train = read_nli_data(MULTINLI_TRAIN_FILENAME, limit=limit)
-    data_multinli_dev = read_nli_data(MULTINLI_DEV_FILENAME, limit=limit)
-    logging.info('MultiNLI: train - %s, dev - %s', data_multinli_train.shape, data_multinli_dev.shape)
+    if SNLI_TRAIN_FILENAME.exists():
+        data_snli_train = read_nli_data(SNLI_TRAIN_FILENAME, set_genre='snli', limit=limit)
+        data_snli_dev = read_nli_data(SNLI_DEV_FILENAME, set_genre='snli', limit=limit)
+        logging.info('SNLI: train - %s, dev - %s', data_snli_train.shape, data_snli_dev.shape)
 
-    data_mli_train = read_nli_data(MLI_TRAIN_FILENAME, set_genre='clinical', limit=limit)
-    data_mli_dev = read_nli_data(MLI_DEV_FILENAME, set_genre='clinical', limit=limit)
-    logging.info('MLI: train - %s, dev - %s', data_mli_train.shape, data_mli_dev.shape)
+    if MULTINLI_TRAIN_FILENAME.exists():
+        data_multinli_train = read_nli_data(MULTINLI_TRAIN_FILENAME, limit=limit)
+        data_multinli_dev = read_nli_data(MULTINLI_DEV_FILENAME, limit=limit)
+        logging.info('MultiNLI: train - %s, dev - %s', data_multinli_train.shape, data_multinli_dev.shape)
+
+    if MLI_TRAIN_FILENAME.exists():
+        data_mli_train = read_nli_data(MLI_TRAIN_FILENAME, set_genre='clinical', limit=limit)
+        data_mli_dev = read_nli_data(MLI_DEV_FILENAME, set_genre='clinical', limit=limit)
+        logging.info('MLI: train - %s, dev - %s', data_mli_train.shape, data_mli_dev.shape)
 
     if load_test:
         data_mli_test = read_nli_data(MLI_TEST_FILENAME, set_genre='clinical', limit=limit)
-    else:
-        data_mli_test = None
 
     # Drop columns that are presented not in all datasets
     columns_to_drop = ['captionID', 'promptID', 'annotator_labels']
@@ -387,6 +393,9 @@ def main():
         PROCESSED_DATA_DIR.mkdir()
 
     for genre in GENRES:
+        if genre not in data_train.index:
+            continue
+
         genre_train = data_train.loc[genre]
         genre_dev = data_dev.loc[genre]
         logging.info('Genre: %s, train: %s, dev: %s', genre, genre_train.shape, genre_dev.shape)

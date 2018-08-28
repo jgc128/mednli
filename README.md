@@ -111,7 +111,7 @@ training_loop_mode = 'best_loss'  # best_loss or best_acc - the model will be sa
 ## Experiments in the paper
 
 ### Baselines
-To run the BOW, InferSent, and ESIM models with default settings, use the following commands:
+To run the BOW, InferSent, and ESIM models with default settings, use the following commands accordingly:
 
 ```
 python train_model.py with model_class=PyTorchSimpleModel

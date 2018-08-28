@@ -16,10 +16,10 @@ MULTINLI_DIR = DATA_DIR / 'multinli_0.9/'
 MULTINLI_TRAIN_FILENAME = MULTINLI_DIR / 'multinli_0.9_train.jsonl'
 MULTINLI_DEV_FILENAME = MULTINLI_DIR / 'multinli_0.9_dev_matched.jsonl'
 
-MLI_DIR = DATA_DIR / 'mli_2.0/'
-MLI_TRAIN_FILENAME = MLI_DIR / 'mli_train_v2.jsonl'
-MLI_DEV_FILENAME = MLI_DIR / 'mli_dev_v2.jsonl'
-MLI_TEST_FILENAME = MLI_DIR / 'mli_test_v2.jsonl'
+MLI_DIR = DATA_DIR / 'mednli_1.0/'
+MLI_TRAIN_FILENAME = MLI_DIR / 'mli_train_v1.jsonl'
+MLI_DEV_FILENAME = MLI_DIR / 'mli_dev_v1.jsonl'
+MLI_TEST_FILENAME = MLI_DIR / 'mli_test_v1.jsonl'
 
 WORD_VECTORS_DIR = DATA_DIR / 'word_embeddings/'
 WORD_VECTORS_FILENAME = {
