@@ -4,12 +4,13 @@ MedNLI - Natural Language Inference in Clinical Texts
 ## Installation
 
 1. Clone this repo: `git clone ...`
-2. Install requirements: `pip install requirements.txt`
-3. Install PyTorch v0.2.0: `pip isntall http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp36-cp36m-manylinux1_x86_64.whl` (see https://github.com/pytorch/pytorch#installation for details)
-4. Install MetaMap: https://metamap.nlm.nih.gov/Installation.shtml
+2. Install NumPy: `pip install numpy`
+3. Install PyTorch v0.2.0: `pip install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp36-cp36m-manylinux1_x86_64.whl` (see https://github.com/pytorch/pytorch#installation for details)
+4. Install requirements: `pip install -r requirements.txt`
+5. Install MetaMap: https://metamap.nlm.nih.gov/Installation.shtml
    - Make sure to set `METAMAP_BINARY_PATH` in the `config.py` to your MetaMap binary installation
-5. Install PyMetaMap: https://github.com/AnthonyMRios/pymetamap
-6. Install UMLS Metathesaurus: https://www.nlm.nih.gov/research/umls/
+6. Install PyMetaMap: https://github.com/AnthonyMRios/pymetamap
+7. Install UMLS Metathesaurus: https://www.nlm.nih.gov/research/umls/
    - Make sure to set `UMLS_INSTALLATION_DIR` in the `config.py` pointing to your UMLS installation 
 
 
