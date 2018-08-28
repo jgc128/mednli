@@ -16,7 +16,6 @@ networkx==1.11
 nltk==3.2.5
 numpy==1.13.3
 pandas==0.21.0
-pkg-resources==0.0.0
 protobuf==3.4.0
 python-dateutil==2.6.1
 pytz==2017.3
@@ -29,7 +28,6 @@ six==1.11.0
 smart-open==1.5.3
 tensorflow-gpu==1.3.0
 tensorflow-tensorboard==0.1.8
-torch==0.2.0+e02f7bf
 tqdm==4.19.4
 urllib3==1.22
 Werkzeug==0.12.2

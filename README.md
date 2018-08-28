@@ -4,7 +4,7 @@ MedNLI - Natural Language Inference in Clinical Texts
 ## Installation
 
 1. Clone this repo: `git clone ...`
-2. Install NumPy: `pip install numpy`
+2. Install NumPy: `pip install numpy==1.13.3`
 3. Install PyTorch v0.2.0: `pip install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp36-cp36m-manylinux1_x86_64.whl` (see https://github.com/pytorch/pytorch#installation for details)
 4. Install requirements: `pip install -r requirements.txt`
 5. Install MetaMap: https://metamap.nlm.nih.gov/Installation.shtml
