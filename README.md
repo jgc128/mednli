@@ -75,7 +75,7 @@ Code tested on Python 3.4 and Python 3.6.3
  1. Download model weights, and the the model-specific tokenizer and embeddings (see the table below).
  2. Put the model weights into the `./data/saved_models/` dir.
  3. Put the tokenizer and the embeddings into the `./data/` dir.
- 4. Create an input file that contains premises and hypotheses, delimited by the `\t` character (see [example](https://mednli.blob.core.windows.net/shared/text_input.txt)).
+ 4. Create an input file that contains premises and hypotheses, delimited by the `\t` character (see [example](https://mednli.blob.core.windows.net/shared/test_input.txt)).
  4. Run the `predict.py` script and provide the input data in STDIN: `python predict.py < data/input.txt`. The resulting probabilities of the `contradiction`, `neutral`, and `entailment` classes correspondingly wll be printed to STDOUT. If you do not want to see the logging and wish to save the results to a file, redirect STDERR to /dev/null and STDOUT to a file: `python predict.py < data/test_input.txt 2>/dev/null > data/test_input_probabilities.txt`
  
 You can configure the model weights, tokenizer, and the embeddings filename using the command line arguments:
