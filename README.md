@@ -69,6 +69,26 @@ Code tested on Python 3.4 and Python 3.6.3
 6. Train the model: `python train_model.py`
    - You can change the parameters in the `config` function or in the command line: `python train_model.py with use_umls_attention=True use_token_level_attention=True` (see the [Sacred documentation](http://sacred.readthedocs.io/en/latest/) for details)
  
+ 
+### Using a pre-trained model
+
+ 1. Download model weights, and the the model-specific tokenizer and embeddings (see the table below).
+ 2. Put the model weights into the `./data/saved_models/` dir.
+ 3. Put the tokenizer and the embeddings into the `./data/` dir.
+ 4. Create an input file that contains premises and hypotheses, delimited by the `\t` character (see example below).
+ 4. Run the `predict.py` script and provide the input data in STDIN: `python predict.py < data/input.txt`. The resulting probabilities of the `contradiction`, `neutral`, and `entailment` classes correspondingly wll be printed to STDOUT. If you do not want to see the logging and wish to save the results to a file, redirect STDERR to /dev/null and STDOUT to a file: `python predict.py < data/test_input.txt 2>/dev/null > data/test_input_probabilities.txt`
+ 
+You can configure the model weights, tokenizer, and the embeddings filename using the command line arguments:
+```
+python train_model.py with model_class=PyTorchInferSentModel model_weights_filename=PyTorchInferSentModel_50_glove_bio_asq_mimic_clinical__.slysamwq.h5 tokenizer_filename=tokenizer_clinical_.pickled embeddings_filename=embeddings_clinical_.pickled
+``` 
+
+| Model description | Model Class | Model weights | Tokenizer | Embeddings |
+|  ------------- |  ------------- |  ------------- |  ------------- |  ------------- |
+|InferSent model, trained on MedNLI only using the glove_bio_asq_mimic word vectors |  `PyTorchInferSentModel` | [PyTorchInferSentModel_50_glove_bio_asq_mimic_clinical__.slysamwq.h5](https://mednli.blob.core.windows.net/shared/pretrained_models/PyTorchInferSentModel_50_glove_bio_asq_mimic_clinical__.slysamwq.h5) | [tokenizer_clinical_.pickled](https://mednli.blob.core.windows.net/shared/pretrained_models/tokenizer_clinical_.pickled) | [embeddings_clinical_.pickled](https://mednli.blob.core.windows.net/shared/pretrained_models/embeddings_clinical_.pickled) |
+
+More models coming soon!
+
 
 ### Configuration options
 ```python

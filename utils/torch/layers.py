@@ -69,7 +69,7 @@ class LSTMEncoder(torch.nn.Module):
             outputs = outputs[inputs_unsorted_idx]
 
             # concat in case of bidirectional, and just remove the first dim in case of unidirectional
-            h = torch.cat(h, dim=-1)
+            h = torch.cat([x for x in h], dim=-1)
             h = h[inputs_unsorted_idx]
         else:
             outputs, (h, c) = self.rnn(inputs, (h0, c0))
