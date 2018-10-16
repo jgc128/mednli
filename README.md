@@ -1,6 +1,13 @@
 MedNLI - Natural Language Inference in Clinical Texts
 =====================================================
 
+## Information
+This repository contains the code to fully reproduce experiments in the paper. 
+As such, it has quite a few dependencies and not trivial to install.
+If you want just a simple ready-to-use baseline with pre-trained models,
+please have a look at our baselines repository:
+https://github.com/jgc128/mednli_baseline
+
 ## Installation
 
 1. Clone this repo: `git clone ...`
