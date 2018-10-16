@@ -14,9 +14,9 @@ We make MedNLI available through the MIMIC-III derived data repository. Any indi
 [http://doi.org/10.13026/C2RS98](http://doi.org/10.13026/C2RS98)
 
 ### Code
-Code to reproduce the results: https://github.com/jgc128/mednli
+Code to reproduce the results: [https://github.com/jgc128/mednli](https://github.com/jgc128/mednli)
 
-A simple ready-to-use baseline with pre-trained models: https://github.com/jgc128/mednli_baseline
+A simple ready-to-use baseline with pre-trained models: [https://github.com/jgc128/mednli_baseline](https://github.com/jgc128/mednli_baseline)
 
 ## Reference
 The paper was accepted to EMNLP 2018! Meanwhile, here is an extended arXiv version:
