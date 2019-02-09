@@ -10,6 +10,7 @@ We introduce MedNLI - a dataset annotated by doctors, performing a natural langu
 
 ## News
  - **January 2019.** MedNLI is a part of a shared task at  BioNLP 2019! [https://sites.google.com/view/mediqa2019](https://sites.google.com/view/mediqa2019)
+ - **October 2018.** A simple baseline system with pre-trained models is now available! [https://github.com/jgc128/mednli_baseline](https://github.com/jgc128/mednli_baseline)
 
 ### Access the data
 We make MedNLI available through the MIMIC-III derived data repository. Any individual certified to access MIMIC-III can access MedNLI.
