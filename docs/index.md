@@ -8,6 +8,9 @@ Natural Language Inference (NLI) is one of the critical tasks for understanding 
 
 We introduce MedNLI - a dataset annotated by doctors, performing a natural language inference task), grounded in the medical history of patients. We present strategies to: 1) leverage transfer learning using datasets from the open domain, (e.g. SNLI) and 2) incorporate domain knowledge from external data and lexical sources (e.g. medical terminologies). Our results demonstrate performance gains using both strategies.
 
+## News
+ - **January 2019.** MedNLI is a part of a shared task at  BioNLP 2019! [https://sites.google.com/view/mediqa2019](https://sites.google.com/view/mediqa2019)
+
 ### Access the data
 We make MedNLI available through the MIMIC-III derived data repository. Any individual certified to access MIMIC-III can access MedNLI.
 
