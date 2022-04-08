@@ -9,6 +9,7 @@ Natural Language Inference (NLI) is one of the critical tasks for understanding 
 We introduce MedNLI - a dataset annotated by doctors, performing a natural language inference task), grounded in the medical history of patients. We present strategies to: 1) leverage transfer learning using datasets from the open domain, (e.g. SNLI) and 2) incorporate domain knowledge from external data and lexical sources (e.g. medical terminologies). Our results demonstrate performance gains using both strategies.
 
 ## News
+ - **April 2022.** MedNLI was translated to Russian and released publicly on PhysioNet! [RuMedNLI: A Russian Natural Language Inference Dataset For The Clinical Domain](https://www.physionet.org/content/rumednli-russian-inference/1.0.0/)
  - **January 2019.** MedNLI is a part of a shared task at  BioNLP 2019! [https://sites.google.com/view/mediqa2019](https://sites.google.com/view/mediqa2019)
  - **October 2018.** A simple baseline system with pre-trained models is now available! [https://github.com/jgc128/mednli_baseline](https://github.com/jgc128/mednli_baseline)
 
