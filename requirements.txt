@@ -6,7 +6,7 @@ chardet==3.0.4
 decorator==4.1.2
 docopt==0.6.2
 gensim==3.0.1
-html5lib==0.9999999
+html5lib==0.99999999
 idna==2.6
 jsonpickle==0.9.5
 Keras==2.0.8
