@@ -16,7 +16,7 @@ networkx==1.11
 nltk==3.4.5
 numpy==1.13.3
 pandas==0.21.0
-protobuf==3.4.0
+protobuf==3.18.3
 python-dateutil==2.6.1
 pytz==2017.3
 PyYAML==3.12
